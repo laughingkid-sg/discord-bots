@@ -1,0 +1,17 @@
+{
+  "name": "emojivote",
+  "version": "1.0.0",
+  "description": "A bot that count a chosen reaction of messages.",
+  "main": "index.js",
+  "author": "Zen",
+  "license": "ISC",
+  "scripts": {
+    "start": "nodemon bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "export-to-csv": "^0.2.1",
+    "nodemon": "^2.0.9"
+  }
+}
