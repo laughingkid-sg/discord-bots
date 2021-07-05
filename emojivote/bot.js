@@ -9,7 +9,7 @@ require('dotenv').config()
  */
 
 /**
- * .env
+ * .env Sample
  * BOT_TOKEN=mVRlthiqnP0c6OShVEpoaTF3.8eZiB8.U3iYdym2rtyiE4Lm4ZOWZRo8PU2
  * ADMIN_ID=037879092225654814
  * EMOJI_ID=939433502967017770
@@ -76,7 +76,7 @@ client.on('message', async msg => {
         })
     }
 
-    else if (msg.content === "!export" && msg.author.id == '709673555499155556') {       
+    else if (msg.content === "!export" && msg.author.id == adminId) {       
           const csvExporter = new exportToCsv(options);
           const csvData  = csvExporter.generateCsv(data, true);
           fs.writeFileSync('result.csv', csvData)
